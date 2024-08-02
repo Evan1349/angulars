@@ -1,0 +1,10 @@
+<section class="card-container">
+        <div *ngFor="let task of tasks" class="card" [ngStyle]="{'border-left-color': task.color}">
+            <div class="card-header">
+                <a href=""><h3>{{task.title}}</h3></a>
+                <p>{{task.date}}</p>
+            </div>
+            <p class="card-content">{{task.description}}</p>
+        </div>
+</section>
+

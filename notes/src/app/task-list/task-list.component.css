@@ -1,0 +1,42 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; 
+  align-items: flex-start; 
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  border-left: 5px solid; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px;
+  height: 200px;
+  box-sizing: border-box; 
+  position: relative;
+
+}
+
+.card-header h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.card-content {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-header h3, .card-header p, .card-content {
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
